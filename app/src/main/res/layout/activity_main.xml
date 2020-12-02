@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <Button
+        android:id="@+id/android_art"
+        android:text="android开发艺术"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/android_customview"
+        android:text="android自定义view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+<!--   <com.example.myapplication.customview.NumberDanceTextView-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--      android:text="1224324234.66"-->
+<!--       android:textSize="45sp"-->
+<!--       android:textColor="@color/colorPrimary"/>-->
+
+</LinearLayout>

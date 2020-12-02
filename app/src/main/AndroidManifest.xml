@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".customview.chapter10.Chapter10MainActivity"></activity>
+        <activity android:name=".customview.chapter10.shapedrawable.BackgroundDrawableActivity"></activity>
+        <activity android:name=".customview.chapter10.shapedrawable.ShapeInstanceActivity"></activity>
+        <activity android:name=".customview.chapter10.shapedrawable.ImgDrawableActivity"></activity>
+        <activity android:name=".customview.chapter10.shapedrawable.ShaderDemoActivity"></activity>
+        <activity android:name=".customview.chapter10.shapedrawable.ShapeConstructorActivity"></activity>
+        <activity android:name=".customview.chapter10.shapedrawable.TelescopeActivity"></activity>
+
+
+        <activity android:name=".customview.chapter10.bitmap.BitmapCompressActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.BitmapDensityActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.decodeStreamActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.ExtraAlphaActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.WaterMarkActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.BitmapFactoryOptionsActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.BitmapPixelActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.BitmapStaticConstructorActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.BmpBlankGradientActivity"></activity>
+        <activity android:name=".customview.chapter10.bitmap.decodeByteArrayActivity"></activity>
+
+        <activity android:name=".customview.chapter9.Chapter9MainActivity" />
+        <activity android:name=".customview.chapter5.Chapter5MainActivity" />
+        <activity android:name=".customview.chapter5.pathmeasure.AlipayActivity" />
+        <activity android:name=".customview.chapter5.pathmeasure.GetPosTanActivity" />
+        <activity android:name=".customview.chapter5.pathmeasure.GetSegmentDEMOActivity" />
+        <activity android:name=".customview.chapter5.svg.SearchEditActivity" />
+        <activity android:name=".customview.chapter5.svg.SVGShowActivity" />
+        <activity android:name=".customview.chapter5.svg.SVGAnimActivity" />
+        <activity android:name=".customview.chapter4.Chapter4MainActivity" />
+        <activity android:name=".customview.chapter4.keyframe.ofIntFloatActivity" />
+        <activity android:name=".customview.chapter4.keyframe.ofObjectActivity" />
+        <activity android:name=".customview.chapter4.keyframe.RingBellActivity" />
+        <activity android:name=".customview.chapter4.viewgroupanim.AnimateLayoutChangesActivity" />
+        <activity android:name=".customview.chapter3.Chapter3MainActivity" />
+        <activity android:name=".customview.chapter3.valueanimator.LoadingDemoActivity" />
+        <activity android:name=".customview.chapter3.valueanimator.RepeatActivity" />
+        <activity android:name=".customview.chapter3.valueanimator.TranslateAnimationActivity" />
+        <activity android:name=".customview.chapter3.valueanimator.ValueAnimDemoActivity" />
+        <activity android:name=".customview.chapter3.objectanimator.FallingBallActivity" />
+        <activity android:name=".customview.chapter3.objectanimator.SetterAnimActivity" />
+        <activity android:name=".customview.chapter3.Animatorset.PathMenuActivity" />
+        <activity android:name=".customview.chapter3.Animatorset.playSequentiallyActivity" />
+        <activity android:name=".customview.chapter3.Animatorset.AnimatorListenerActivity" />
+        <activity android:name=".customview.chapter2.Chapter2MainActivity" />
+        <activity android:name=".customview.chapter2.viewanimation.AnimationJAVAActivity" />
+        <activity android:name=".customview.chapter2.viewanimation.AnimationXMLActivity" />
+        <activity android:name=".customview.chapter2.animdemo.CameraStretchDemo" />
+        <activity android:name=".customview.chapter2.animdemo.LoadingDemo" />
+        <activity android:name=".customview.chapter2.animdemo.ScannerDemo" />
+        <activity android:name=".customview.chapter2.frameanim.FrameAnimJAVAActivity" />
+        <activity android:name=".customview.chapter2.frameanim.FrameAnimXMLActivity" />
+        <activity android:name=".customview.chapter8.RoundImageActivity" />
+        <activity android:name=".customview.chapter8.TextWaveActivity" />
+        <activity android:name=".customview.chapter8.EraserImageActivity" />
+        <activity android:name=".customview.chapter8.InvertImageActivity" />
+        <activity android:name=".customview.chapter8.IrregularWaveActivity" />
+        <activity android:name=".customview.chapter8.LightBookActivity" />
+        <activity android:name=".customview.chapter8.PorterDuffXfermodeActivity" />
+        <activity android:name=".customview.chapter8.TwitterActivity" />
+        <activity android:name=".customview.chapter8.Chapter8MainActivity" />
+        <activity android:name=".customview.chapter7.Chapter7MainActivity" />
+        <activity android:name=".customview.chapter7.bezier.BezierGestureTrackActivity" />
+        <activity android:name=".customview.chapter7.bezier.AnimWaveActivity" />
+        <activity android:name=".customview.chapter7.bezier.BezierWaveActivity" />
+        <activity android:name=".customview.chapter7.bezier.NormalGestureTrackActivity" />
+        <activity android:name=".customview.chapter7.shadowlayer.BitmapShadowActivity" />
+        <activity android:name=".customview.chapter7.shadowlayer.ShadowLayerActivity" />
+        <activity android:name=".customview.chapter7.shadowlayer.TextShadowActivity" />
+        <activity android:name=".customview.chapter7.bitmapshader.AvatorActivity" />
+        <activity android:name=".customview.chapter7.bitmapshader.BitmapShaderActivity" />
+        <activity android:name=".customview.chapter7.bitmapshader.TelescopeActivity" />
+        <activity android:name=".customview.chapter6.Chapter6MainActivity" />
+        <activity android:name=".customview.chapter6.MinTextRectActivity" />
+        <activity android:name=".customview.chapter6.MyTextViewActivity" />
+        <activity android:name=".customview.chapter1.Chapter1MainActivity" />
+        <activity android:name=".customview.chapter1.paintbasis.Summarize_1_1_1_Activity" />
+        <activity android:name=".customview.chapter1.paintbasis.Summarize_1_1_3_Activity" />
+        <activity android:name=".customview.chapter1.paintbasis.RectPontView_1_1_4_Activity" />
+        <activity android:name=".customview.chapter1.paintbasis.intersect_1_1_4_Activity" />
+        <activity android:name=".customview.chapter1.paintbasis.PathView_1_2_Activity" />
+        <activity android:name=".customview.chapter1.paintbasis.SpiderActivity" />
+        <activity android:name=".customview.chapter1.regionbasis.RegionConstructActivity" />
+        <activity android:name=".customview.chapter1.regionbasis.RegionOpActivity" />
+        <activity android:name=".customview.chapter1.canvasoperation.ClipRgnActivity" />
+        <activity android:name=".customview.chapter1.canvasoperation.CustomCircleActivity" />
+        <activity android:name=".customview.chapter1.canvasoperation.CustomViewActivity" />
+        <activity android:name=".customview.chapter1.canvasoperation.CircleOperationActivity" />
+        <activity android:name=".customview.CustomViewMainActivity" />
+        <activity android:name=".art.ArtMainActivity" />
+        <activity android:name=".art.chapter8.DemoActivity_1" />
+        <activity android:name=".art.chapter8.Chapter8MainActivity" />
+        <activity android:name=".art.chapter7.Chapter7MainActivity" />
+        <activity android:name=".art.chapter7.TestActivity" />
+        <activity android:name=".art.chapter7.DemoActivity_1" />
+        <activity android:name=".art.chapter7.DemoActivity_2" />
+        <activity android:name=".art.chapter6.Chapter6MainActivity" />
+        <activity
+            android:name=".art.chapter5.RemoteViewMainActivity"
+            android:process=":remote" />
+        <activity android:name=".art.chapter5.DemoActivity_1" />
+        <activity android:name=".art.chapter5.DemoActivity_2" />
+        <activity android:name=".art.chapter5.TestActivity" />
+        <activity android:name=".art.chapter4.CustomViewDemoActivity_2" />
+        <activity android:name=".art.chapter4.CustomViewDemoActivity_1" />
+        <activity android:name=".art.chapter4.CustomViewTestActivity" />
+        <activity android:name=".art.chapter3.TestActivity" />
+        <activity android:name=".art.chapter3.DemoActivity_2" />
+        <activity android:name=".art.chapter3.DemoActivity_1" />
+        <activity android:name=".art.chapter2.BinderPoolActivity" />
+        <activity android:name=".art.chapter2.TCPClientActivity" />
+        <activity android:name=".contentprovider.ProviderActivity" />
+
+        <provider
+            android:name=".contentprovider.BookProvider"
+            android:authorities="com.example.myapplication.book.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.example.myapplication"
+            android:process=":provider" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".art.chapter2.BookManagerActivity" />
+        <activity android:name=".art.chapter2.MessengerActivity" /> <!-- 配置Service组件,同时配置一个action -->
+        <service android:name=".art.chapter2.TestService1">
+            <intent-filter>
+                <action android:name="com.jay.example.service.TEST_SERVICE1" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".art.chapter2.TestService2"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.jay.example.service.TEST_SERVICE2" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".art.chapter2.TestService3"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.test.intentservice" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".art.chapter2.AIDLService"
+            android:process="com.example.myapplication.remote">
+            <intent-filter>
+                <action android:name="android.intent.action.AIDLService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".art.chapter2.MessengerService"
+            android:process=":remote" />
+        <service
+            android:name=".art.chapter2.BookManagerService"
+            android:permission="com.example.myapplication.permission.ACCESS_BOOK_SERVICE"
+            android:process=":remote" />
+        <service
+            android:name=".art.chapter2.TCPServerService"
+            android:process=":remote" />
+        <service
+            android:name=".art.chapter2.BinderPoolService"
+            android:process=":remote" />
+
+        <receiver android:name=".art.chapter5.MyAppWidgetProvider">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider_info" />
+
+            <intent-filter>
+                <action android:name="com.example.myapplication.action.CLICK" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

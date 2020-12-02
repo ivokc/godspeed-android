@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".art.ArtMainActivity">
+    <Button
+        android:id="@+id/btn_messenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messenger Activity"/>
+    <Button
+        android:id="@+id/btn_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Activity"/>
+    <Button
+        android:id="@+id/btn_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="provider Activity"/>
+    <Button
+        android:id="@+id/btn_socket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="socket Activity"/>
+
+    <Button
+        android:id="@+id/btn_binder_pool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="binderpool Activity"/>
+
+    <Button
+        android:id="@+id/btn_uievent_demo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uievent1 Activity"/>
+
+    <Button
+        android:id="@+id/btn_uievent_demo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uievent2 Activity"/>
+    <Button
+        android:id="@+id/btn_uievent_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uievent_test Activity"/>
+    <Button
+        android:id="@+id/btn_art_customview_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="art_customview_test_Activity"/>
+
+    <Button
+        android:id="@+id/btn_art_customview_demo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="art_customview_demo1_Activity"/>
+
+    <Button
+        android:id="@+id/btn_art_customview_demo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="art_customview_demo2_Activity"/>
+
+    <Button
+        android:id="@+id/btn_art_remoteview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_art_remoteview_Activity"/>
+
+    <Button
+        android:id="@+id/btn_art_chapter6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_art_chapter6"/>
+
+    <Button
+        android:id="@+id/btn_art_chapter7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_art_chapter7"/>
+
+    <Button
+        android:id="@+id/btn_art_chapter8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_art_chapter8"/>
+
+</LinearLayout>
