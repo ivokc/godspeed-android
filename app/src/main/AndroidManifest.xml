@@ -2,39 +2,99 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <permission
+        android:name="com.example.myapplication.permission.ACCESS_BOOK_SERVICE"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="com.example.myapplication.permission.ACCESS_BOOK_SERVICE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
+        android:name=".art.chapter2.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".customview.chapter10.Chapter10MainActivity"></activity>
-        <activity android:name=".customview.chapter10.shapedrawable.BackgroundDrawableActivity"></activity>
-        <activity android:name=".customview.chapter10.shapedrawable.ShapeInstanceActivity"></activity>
-        <activity android:name=".customview.chapter10.shapedrawable.ImgDrawableActivity"></activity>
-        <activity android:name=".customview.chapter10.shapedrawable.ShaderDemoActivity"></activity>
-        <activity android:name=".customview.chapter10.shapedrawable.ShapeConstructorActivity"></activity>
-        <activity android:name=".customview.chapter10.shapedrawable.TelescopeActivity"></activity>
+        <activity android:name=".advancelight.chapter2.Chapter2MainActivity"></activity>
+        <activity android:name=".advancelight.chapter2.designsupportlibrary.TextInputLayoutActivity" />
+        <activity android:name=".advancelight.chapter2.designsupportlibrary.SnackbarActivity" />
+        <activity android:name=".advancelight.chapter1.permissions.NativePermissionActivity" />
+        <activity android:name=".advancelight.chapter1.toolbar.ToolbarActivity" />
+        <activity android:name=".advancelight.chapter1.notification.MyNotificationActivity" />
+        <activity android:name=".advancelight.chapter1.cardview.CardViewActivity" />
+        <activity android:name=".advancelight.chapter1.recycleview.RecycleViewActivity" />
+        <activity android:name=".advancelight.chapter1.Chapter1MainActivity" />
+        <activity android:name=".advancelight.AdvanceLightMainActivity" />
+        <activity
+            android:name=".art.chapter2.ThirdActivity"
+            android:process="com.ryg.chapter_2.remote" />
+        <activity
+            android:name=".art.chapter2.SecondActivity"
+            android:process=":remote" />
+        <activity android:name=".art.chapter2.aidl.BookManagerActivity" />
+        <activity android:name=".art.chapter2.messenger.MessengerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
 
+        <service
+            android:name=".art.chapter2.messenger.MessengerService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.jjm.MessengerService.launch" />
+            </intent-filter>
+        </service>
 
-        <activity android:name=".customview.chapter10.bitmap.BitmapCompressActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.BitmapDensityActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.decodeStreamActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.ExtraAlphaActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.WaterMarkActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.BitmapFactoryOptionsActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.BitmapPixelActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.BitmapStaticConstructorActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.BmpBlankGradientActivity"></activity>
-        <activity android:name=".customview.chapter10.bitmap.decodeByteArrayActivity"></activity>
+        <activity android:name=".art.chapter2.provider.ProviderActivity" />
 
+        <service
+            android:name=".art.chapter2.aidl.BookManagerService"
+            android:process=":remote" />
+
+        <provider
+            android:name=".art.chapter2.provider.BookProvider"
+            android:authorities="com.example.myapplication.art.chapter2.book.provider"
+            android:permission="com.jjm.PROVIDER"
+            android:process=":provider" />
+
+        <activity android:name=".art.chapter2.socket.TCPClientActivity" />
+
+        <service
+            android:name=".art.chapter2.socket.TCPServerService"
+            android:process=":remote" />
+
+        <activity android:name=".art.chapter2.binderpool.BinderPoolActivity" />
+
+        <service
+            android:name=".art.chapter2.binderpool.BinderPoolService"
+            android:process=":remote" />
+
+        <activity android:name=".art.chapter2.Chapter2MainActivity" />
+        <activity android:name=".customview.chapter10.Chapter10MainActivity" />
+        <activity android:name=".customview.chapter10.shapedrawable.BackgroundDrawableActivity" />
+        <activity android:name=".customview.chapter10.shapedrawable.ShapeInstanceActivity" />
+        <activity android:name=".customview.chapter10.shapedrawable.ImgDrawableActivity" />
+        <activity android:name=".customview.chapter10.shapedrawable.ShaderDemoActivity" />
+        <activity android:name=".customview.chapter10.shapedrawable.ShapeConstructorActivity" />
+        <activity android:name=".customview.chapter10.shapedrawable.TelescopeActivity" />
+        <activity android:name=".customview.chapter10.bitmap.BitmapCompressActivity" />
+        <activity android:name=".customview.chapter10.bitmap.BitmapDensityActivity" />
+        <activity android:name=".customview.chapter10.bitmap.decodeStreamActivity" />
+        <activity android:name=".customview.chapter10.bitmap.ExtraAlphaActivity" />
+        <activity android:name=".customview.chapter10.bitmap.WaterMarkActivity" />
+        <activity android:name=".customview.chapter10.bitmap.BitmapFactoryOptionsActivity" />
+        <activity android:name=".customview.chapter10.bitmap.BitmapPixelActivity" />
+        <activity android:name=".customview.chapter10.bitmap.BitmapStaticConstructorActivity" />
+        <activity android:name=".customview.chapter10.bitmap.BmpBlankGradientActivity" />
+        <activity android:name=".customview.chapter10.bitmap.decodeByteArrayActivity" />
         <activity android:name=".customview.chapter9.Chapter9MainActivity" />
         <activity android:name=".customview.chapter5.Chapter5MainActivity" />
         <activity android:name=".customview.chapter5.pathmeasure.AlipayActivity" />
@@ -105,6 +165,7 @@
         <activity android:name=".customview.CustomViewMainActivity" />
         <activity android:name=".art.ArtMainActivity" />
         <activity android:name=".art.chapter8.DemoActivity_1" />
+        <activity android:name=".art.chapter8.TestActivity" />
         <activity android:name=".art.chapter8.Chapter8MainActivity" />
         <activity android:name=".art.chapter7.Chapter7MainActivity" />
         <activity android:name=".art.chapter7.TestActivity" />
@@ -123,67 +184,13 @@
         <activity android:name=".art.chapter3.TestActivity" />
         <activity android:name=".art.chapter3.DemoActivity_2" />
         <activity android:name=".art.chapter3.DemoActivity_1" />
-        <activity android:name=".art.chapter2.BinderPoolActivity" />
-        <activity android:name=".art.chapter2.TCPClientActivity" />
-        <activity android:name=".contentprovider.ProviderActivity" />
-
-        <provider
-            android:name=".contentprovider.BookProvider"
-            android:authorities="com.example.myapplication.book.provider"
-            android:enabled="true"
-            android:exported="true"
-            android:permission="com.example.myapplication"
-            android:process=":provider" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".art.chapter2.BookManagerActivity" />
-        <activity android:name=".art.chapter2.MessengerActivity" /> <!-- 配置Service组件,同时配置一个action -->
-        <service android:name=".art.chapter2.TestService1">
-            <intent-filter>
-                <action android:name="com.jay.example.service.TEST_SERVICE1" />
-            </intent-filter>
-        </service>
-        <service
-            android:name=".art.chapter2.TestService2"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.jay.example.service.TEST_SERVICE2" />
-            </intent-filter>
-        </service>
-        <service
-            android:name=".art.chapter2.TestService3"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.test.intentservice" />
-            </intent-filter>
-        </service>
-        <service
-            android:name=".art.chapter2.AIDLService"
-            android:process="com.example.myapplication.remote">
-            <intent-filter>
-                <action android:name="android.intent.action.AIDLService" />
-            </intent-filter>
-        </service>
-        <service
-            android:name=".art.chapter2.MessengerService"
-            android:process=":remote" />
-        <service
-            android:name=".art.chapter2.BookManagerService"
-            android:permission="com.example.myapplication.permission.ACCESS_BOOK_SERVICE"
-            android:process=":remote" />
-        <service
-            android:name=".art.chapter2.TCPServerService"
-            android:process=":remote" />
-        <service
-            android:name=".art.chapter2.BinderPoolService"
-            android:process=":remote" />
-
+        </activity> <!-- 配置Service组件,同时配置一个action -->
         <receiver android:name=".art.chapter5.MyAppWidgetProvider">
             <meta-data
                 android:name="android.appwidget.provider"

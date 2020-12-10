@@ -11,7 +11,7 @@ import android.widget.RemoteViews;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-import com.example.myapplication.art.chapter2.MyConstants;
+import com.example.myapplication.art.chapter2.utils.MyConstants;
 
 public class DemoActivity_2 extends Activity {
     private static final String TAG = "DemoActivity_2";

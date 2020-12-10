@@ -1,7 +1,5 @@
 package com.example.myapplication.art.chapter3;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,8 +12,10 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.myapplication.R;
-import com.example.myapplication.art.chapter2.MyUtils;
+import com.example.myapplication.art.chapter2.utils.MyUtils;
 
 import java.util.ArrayList;
 

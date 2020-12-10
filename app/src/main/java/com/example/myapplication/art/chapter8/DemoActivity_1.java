@@ -25,7 +25,7 @@ public class DemoActivity_1 extends AppCompatActivity {
         TextView textView = new TextView(this);
         textView.setText("this is toast!");
         dialog.setContentView(textView);
-        dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ERROR);
+        dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
         dialog.show();
     }
 }

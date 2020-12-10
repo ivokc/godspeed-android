@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+
+
+    <TextView
+        android:text="activity_chapter2_main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/second_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open second activity" />
+
+    <Button
+        android:id="@+id/messenger_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open messenger activity" />
+
+    <Button
+        android:id="@+id/aidl_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open aidl activity" />
+
+    <Button
+        android:id="@+id/content_provider_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open content provider activity" />
+
+    <Button
+        android:id="@+id/socket_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open socket activity" />
+
+    <Button
+        android:id="@+id/binder_pool_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open binder_pool activity" />
+
+
+
+
+</LinearLayout>

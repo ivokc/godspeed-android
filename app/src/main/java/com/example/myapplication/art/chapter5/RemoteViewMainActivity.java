@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RemoteViews;
 
 import com.example.myapplication.R;
-import com.example.myapplication.art.chapter2.MyConstants;
+import com.example.myapplication.art.chapter2.utils.MyConstants;
 
 public class RemoteViewMainActivity extends Activity {
 

@@ -1,8 +1,5 @@
 package com.example.myapplication.art.chapter7;
 
-import java.util.ArrayList;
-
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,15 +11,17 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 import com.example.myapplication.R;
+import com.example.myapplication.art.chapter2.utils.MyUtils;
 import com.example.myapplication.art.chapter3.HorizontalScrollViewEx;
-import com.example.myapplication.art.chapter2.MyUtils;
+
+import java.util.ArrayList;
 
 public class DemoActivity_2 extends Activity {
     private static final String TAG = "DemoActivity_2";

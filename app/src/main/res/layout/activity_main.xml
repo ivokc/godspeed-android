@@ -18,8 +18,16 @@
         android:text="android自定义view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/android_advance_light"
+        android:text="android进阶之光"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
+    <com.example.myapplication.TestView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
 <!--   <com.example.myapplication.customview.NumberDanceTextView-->

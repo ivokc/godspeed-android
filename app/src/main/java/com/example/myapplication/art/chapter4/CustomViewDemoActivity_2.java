@@ -1,7 +1,5 @@
 package com.example.myapplication.art.chapter4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,9 +11,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.myapplication.R;
+import com.example.myapplication.art.chapter2.utils.MyUtils;
 import com.example.myapplication.art.chapter3.HorizontalScrollViewEx;
-import com.example.myapplication.art.chapter2.MyUtils;
 
 import java.util.ArrayList;
 

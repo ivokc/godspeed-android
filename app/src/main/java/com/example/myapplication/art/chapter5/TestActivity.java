@@ -102,8 +102,7 @@ public class TestActivity extends Activity implements OnClickListener {
             PendingIntent openActivity2PendingIntent = PendingIntent.getActivity(instance,
                     0, new Intent(instance, DemoActivity_2.class), PendingIntent.FLAG_UPDATE_CURRENT);
             remoteViews.setOnClickPendingIntent(R.id.open_activity2, openActivity2PendingIntent);
-            mBuilder
-                    .setCustomContentView(remoteViews)
+            mBuilder.setCustomContentView(remoteViews)
                     .setCustomBigContentView(remoteViews)
                     .setContentIntent(pendingIntent);
             manager.notify(sId, mBuilder.build());
