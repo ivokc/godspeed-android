@@ -17,6 +17,19 @@
             android:text="btn_art_chapter2"/>
 
         <Button
+            android:id="@+id/btn_art_chapter3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="btn_art_chapter3"/>
+
+        <Button
+            android:id="@+id/btn_art_chapter4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="btn_art_chapter4"/>
+
+
+        <Button
             android:id="@+id/btn_art_chapter6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

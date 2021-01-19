@@ -9,6 +9,30 @@
         android:layout_height="wrap_content"
         android:text="design support library"/>
 
+    <Button
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tablayout"/>
+
+    <Button
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="navigation view"/>
+
+    <Button
+        android:id="@+id/coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="coordinatorlayout"/>
+
+    <Button
+        android:id="@+id/collapsing_toolbar_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="collapsing toolbar"/>
+
 
 
 </LinearLayout>

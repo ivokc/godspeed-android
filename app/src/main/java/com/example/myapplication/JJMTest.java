@@ -3,6 +3,7 @@ package com.example.myapplication;
 import com.example.myapplication.leetcode.ListNode;
 
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @name My Application
@@ -13,23 +14,50 @@ import java.util.Arrays;
 public class JJMTest {
     private static final String AMT_REGEX = "^(([1-9][0-9]{0,14})|([0]{1})|(([0]\\.\\d{1,2}|[1-9][0-9]{0,14}\\.\\d{1,2})))$";
 
+
+    public AtomicInteger inc = new AtomicInteger(0);
+    public void increase(){
+        inc.incrementAndGet();
+    }
     public static void main(String[] args) {
 
 
 
 
-        long startTime = System.currentTimeMillis();    //获取开始时间
+        final JJMTest jjmTest = new JJMTest();
+        for (int i = 0; i < 10; i++) {
+            new Thread() {
 
-         //测试的代码段
-        int a = sum(new int[]{1,2,3});
+                @Override
+                public void run() {
+                    for (int j = 0; j < 1000; j++) {
+                        jjmTest.increase();
+                    }
+                }
+            }.start();
+        }
+        while (Thread.activeCount() > 2){
+            Thread.yield();
+        }
+        System.out.println(jjmTest.inc);
 
-        System.out.println(5f/2);
 
 
 
-        long endTime = System.currentTimeMillis();    //获取结束时间
 
-        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
+
+//        long startTime = System.currentTimeMillis();    //获取开始时间
+//
+//         //测试的代码段
+//        int a = sum(new int[]{1,2,3});
+//
+//        System.out.println(-1 + -1);
+//
+//
+//
+//        long endTime = System.currentTimeMillis();    //获取结束时间
+
+//        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
     }
 
 

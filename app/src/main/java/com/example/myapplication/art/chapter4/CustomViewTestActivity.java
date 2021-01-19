@@ -1,7 +1,5 @@
 package com.example.myapplication.art.chapter4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,11 +7,13 @@ import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.myapplication.R;
 
 public class CustomViewTestActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "CustomViewTestActivity";
+    private static final String TAG = "jajajasisjfie";
 
     private Button view;
     private View mButton2;
@@ -49,6 +49,8 @@ public class CustomViewTestActivity extends AppCompatActivity implements View.On
             public void run() {
                 int width = view.getMeasuredWidth();
                 int height = view.getMeasuredHeight();
+                Log.d(TAG, "view.post, width= " + view.getMeasuredWidth() + " height= " + view.getMeasuredHeight());
+
             }
         });
 
@@ -61,6 +63,8 @@ public class CustomViewTestActivity extends AppCompatActivity implements View.On
                 view.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 int width = view.getMeasuredWidth();
                 int height = view.getMeasuredHeight();
+                Log.d(TAG, "ViewTreeObserver, width= " + view.getMeasuredWidth() + " height= " + view.getMeasuredHeight());
+
             }
         });
     }

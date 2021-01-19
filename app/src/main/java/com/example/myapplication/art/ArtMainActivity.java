@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
 import com.example.myapplication.art.chapter2.Chapter2MainActivity;
+import com.example.myapplication.art.chapter3.Chapter3MainActivity;
+import com.example.myapplication.art.chapter4.Chapter4MainActivity;
 import com.example.myapplication.art.chapter6.Chapter6MainActivity;
 import com.example.myapplication.art.chapter7.Chapter7MainActivity;
 import com.example.myapplication.art.chapter8.Chapter8MainActivity;
@@ -26,6 +28,18 @@ public class ArtMainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn_art_chapter3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ArtMainActivity.this, Chapter3MainActivity.class));
+            }
+        });
+        findViewById(R.id.btn_art_chapter4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ArtMainActivity.this, Chapter4MainActivity.class));
+            }
+        });
         findViewById(R.id.btn_art_chapter6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
